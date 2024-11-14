@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .swap {
@@ -24,6 +30,7 @@
   box-sizing: border-box;
   animation: borderAnimation 2s linear infinite;
   pointer-events: none;
+  animation-delay: 5s;
 }
 
 /* Border animation keyframes */
@@ -196,6 +203,10 @@
   cursor: pointer;
 }
 
+.swap_button:hover {
+  background-color: #2e4b21;
+}
+
 .liqudity {
   display: flex;
   gap: 5px;
@@ -211,6 +222,10 @@
   font-family: "Roboto Mono", monospace;
   border: none;
   cursor: pointer;
+}
+
+.connect_button:hover {
+  background-color: #3ea7b0;
 }
 
 .swapped {
