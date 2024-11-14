@@ -7,7 +7,57 @@
 
 .swap {
   background-color: #0E0D14;
-  width: 380px;
+  width: 500px;
+  position: relative;
+  margin: 50px auto;
+}
+
+/* Pseudo-element for the animated border */
+.swap::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  animation: borderAnimation 2s linear infinite;
+  pointer-events: none;
+}
+
+/* Border animation keyframes */
+@keyframes borderAnimation {
+  0% {
+    border-top: 3px solid #7EECF6;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+  }
+  25% {
+    border-top: 3px solid transparent;
+    border-right: 3px solid #7EECF6;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+  }
+  50% {
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid #7EECF6;
+    border-left: 3px solid transparent;
+  }
+  75% {
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #7EECF6;
+  }
+  100% {
+    border-top: 3px solid #7EECF6;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+  }
 }
 
 .header {
@@ -40,7 +90,6 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .form_1 {
@@ -168,4 +217,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .swap {
+    width: 400px;
+  }
 }

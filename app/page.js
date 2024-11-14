@@ -61,6 +61,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className='swapbutton'>
+            <div className='btn' onClick={() => {
+              let tempToToken = toToken;
+              let tempToAmount = toTokenAmount;
+              setToToken(fromToken);
+              setFromToken(tempToToken);
+              setToTokenAmount(fromTokenAmount);
+              setFromTokenAmount(tempToAmount);
+            }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokLinecap="round" strokLinejoin="round" class="lucide lucide-arrow-up-down w-4 h-4 text-black"><path d="m21 16-4 4-4-4"></path><path d="M17 20V4"></path><path d="m3 8 4-4 4 4"></path><path d="M7 4v16"></path></svg>
+            </div>
+          </div>
           <div className={styles.swap_1}>
             <div className={styles.form_1}>
               <label>Receive</label>

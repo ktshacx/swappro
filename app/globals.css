@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -106,4 +107,20 @@ body {
 
 .tx:hover {
   color: #fff;
+}
+
+.swapbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px 5px 3px 5px;
+  background-color: #666;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
