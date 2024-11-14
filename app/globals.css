@@ -61,6 +61,7 @@ body {
   font-family: "Roboto Mono", monospace;
   border: none;
   cursor: pointer;
+  color: #000;
 }
 
 .tick {

@@ -185,6 +185,7 @@
 }
 
 .swap_button {
+  color: #000;
   background-color: #50823A;
   padding: 10px;
   font-size: 20px;
@@ -201,6 +202,7 @@
 }
 
 .connect_button {
+  color: #000;
   background-color: #7EECF6;
   padding: 10px;
   font-size: 20px;
