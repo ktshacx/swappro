@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.swap}>
+      <div className={page == 0 ? styles.swap: styles.swap2}>
         <div className={styles.header}>
           <p>SWAP <span>PRO</span></p>
         </div>
