@@ -143,6 +143,10 @@
   cursor: pointer;
 }
 
+.emoji_selector_1:hover {
+  background-color: #48464f;
+}
+
 .side_box {
   display: flex;
   align-items: end;
