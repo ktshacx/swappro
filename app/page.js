@@ -94,7 +94,9 @@ export default function Home() {
             <input type="checkbox" className={styles.checkbox}></input>
             <label>Price Protection</label>
           </div>
-          {wallet ? <button className={styles.swap_button} onClick={() => {setIsSwapping(true); setPage(1)}}>{isSwapping ? 'SWAPPING...' : 'SWAP'}</button> : 
+          {wallet ? <button className={styles.swap_button} onClick={() => {setIsSwapping(true); setTimeout(function() {
+setPage(1)
+}, 3000);}}>{isSwapping ? 'SWAPPING...' : 'SWAP'}</button> : 
           <button className={styles.connect_button} onClick={() => connect_wallet()}>Connect Wallet</button>}
         </div> :
         <div className={styles.swapped}>
