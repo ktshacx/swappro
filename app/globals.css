@@ -135,3 +135,7 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
+.btn:hover {
+  background-color: #474747;
+}
