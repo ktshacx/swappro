@@ -39,7 +39,7 @@ export default function Home() {
     <div className={styles.main}>
       <div className={page == 0 ? styles.swap: styles.swap2}>
         <div className={styles.header}>
-          <p>RAINBOW <span>ROADS</span></p>
+          <p>RAINBOW <span>ROADS</span> 🌈</p>
         </div>
         {page == 0 ? <div className={styles.swap_form}>
           <div className={styles.swap_1}>
